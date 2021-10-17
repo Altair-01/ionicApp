@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "meet-management-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

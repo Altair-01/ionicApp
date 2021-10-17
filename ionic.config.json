@@ -1,0 +1,7 @@
+{
+  "name": "meet-management-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
