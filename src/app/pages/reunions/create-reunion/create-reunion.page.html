@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nouvelle réunion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Ordre du jour: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+
+  <ion-item>
+    <ion-label>Heure de début:</ion-label>
+    <ion-datetime displayFormat="D MMM YYYY H:mm" min="2020" max="2100" value="2021-01-01T00:00Z"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Heure de fin:</ion-label>
+    <ion-datetime displayFormat="D MMM YYYY H:mm" min="2020" max="2100" value="2021-01-01T00:00Z"></ion-datetime>
+  </ion-item>
+
+
+</ion-content>
+
+
+<!-- Cette fonctionnalité permettra à l'utilisateur de
+   planifier une réunion. Il aura à préciser : 
+   1.l'ordre du jour
+   2.les dates de début et de fin 
+   3. les participants. pour le choix des participants(l'utilisateur à choisir parmi une liste de choix avec la possiblité de faire des recherches) -->
