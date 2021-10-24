@@ -17,15 +17,6 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'param',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../pages/param/param.module').then(m => m.ParamPageModule)
-          }
-        ]
-      },
-      {
         path: 'reunions',
         children: [
           {
@@ -49,7 +40,7 @@ const routes: Routes = [
         pathMatch: 'full'
       }
     ]
-    
+    ,
   },
   {
     path: '',

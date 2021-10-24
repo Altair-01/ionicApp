@@ -1,9 +1,42 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>employes</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+    <div class="header">
+        <h2>Gestion</h2>
 
+
+        <ion-fab vertical="top" horizontal="end" slot="fixed">
+            <ion-fab-button>
+                <ion-icon name="settings"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list slide="bottom">
+
+                <ion-fab-button>
+                    <ion-icon name="people-outline"></ion-icon>
+                </ion-fab-button>
+
+                <ion-fab-button>
+                    <ion-icon name="person-add-outline"></ion-icon>
+                </ion-fab-button>
+
+                <ion-fab-button>
+                    <ion-icon name="person-remove-outline"></ion-icon>
+                </ion-fab-button>
+
+
+                <ion-fab-button>
+                    <ion-icon name="log-out-outline"></ion-icon>
+                </ion-fab-button>
+
+            </ion-fab-list>
+        </ion-fab>
+
+    </div>
+    <div class="flex">
+        <div class="border-blue">
+            <div class="border-white">
+                <div class="img-box">
+                    <img src="../../../assets/profil.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </ion-content>

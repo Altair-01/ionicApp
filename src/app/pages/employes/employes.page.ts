@@ -11,5 +11,8 @@ export class EmployesPage implements OnInit {
 
   ngOnInit() {
   }
+  fonction(){
+    alert('Vous venez de cliquer sur le bouton');
+  }
 
 }
