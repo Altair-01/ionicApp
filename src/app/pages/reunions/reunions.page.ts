@@ -7,9 +7,8 @@ import { Reunion } from 'src/app/models/reunion';
 })
 export class ReunionsPage implements OnInit {
   reunions=[
-    new Reunion(1,"Comment faire ça ?"),
+    new Reunion(1,"Réunion du conseil pédagogique"),
     new Reunion(2,"Sommet sur le climat")
-
   ]
   constructor() { }
 
