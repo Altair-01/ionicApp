@@ -5,9 +5,6 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-<<<<<<< HEAD
-   }
-=======
   },
   {
     path: '',
@@ -26,7 +23,6 @@ const routes: Routes = [
     path: 'delete-employe',
     loadChildren: () => import('./pages/employes/delete-employe/delete-employe.module').then( m => m.DeleteEmployePageModule)
   }
->>>>>>> dc3903daf87aec31909d16e0e19ad10a7d81dd4c
 ];
 
 @NgModule({
