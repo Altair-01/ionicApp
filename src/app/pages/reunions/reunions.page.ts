@@ -13,7 +13,6 @@ export class ReunionsPage implements OnInit {
   ]
   constructor() { }
 
-  ngOnInit() {
-  }
+   ngOnInit() {}
 
 }
