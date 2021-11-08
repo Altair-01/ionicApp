@@ -1,9 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Réunions</ion-title>
+    <ion-title>reunions</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- List of reunions-->
+  <ion-grid class="ion-margin">
+    <ion-row>
+      <ion-col>ID</ion-col>
+      <ion-col>Heure début</ion-col>
+      <ion-col>Heure fin</ion-col>
+      <ion-col>Ordre jour</ion-col>
+      <!-- <ion-col>Participants</ion-col> we'll add participants later -->
+    </ion-row>
+    <ion-row *ngFor="let reunion of reunions">
+      <ion-col> {{reunion.id}} </ion-col>
+      <ion-col> {{reunion.ordreJour}} </ion-col>
+      <ion-col> {{reunion.ordreJour}} </ion-col>
+      <ion-col> {{reunion.ordreJour}} </ion-col>
+      <!-- <ion-col> {{reunion.participants}} </ion-col> we'll add participants later -->
+    </ion-row>
+  </ion-grid>
+  <!-- List of reunions-->
 
+
+  <!-- Create meeting button -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button onclick="">
+      <ion-icon name="add" routerLink="/tabs/reunions/create-reunion"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <!-- Create meeting button -->
 </ion-content>
