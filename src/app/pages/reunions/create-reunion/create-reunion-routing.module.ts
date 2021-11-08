@@ -6,7 +6,8 @@ import { CreateReunionPage } from './create-reunion.page';
 const routes: Routes = [
   {
     path: '',
-    component: CreateReunionPage
+    component: CreateReunionPage,
+    
   }
 ];
 

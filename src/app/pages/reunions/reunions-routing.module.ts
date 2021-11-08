@@ -5,23 +5,11 @@ import { ReunionsPage } from './reunions.page';
 
 const routes: Routes = [
   {
-    path: 'reunions',
-    component: ReunionsPage,
-    children:[
-      {
-        path: 'create',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('./create-reunion/create-reunion.module').then(m => m.CreateReunionPageModule)
-          }
-        ]
-      },
-    ]
-
+    path: '',
+    component: ReunionsPage
   },
   {
-    path: 'create',
+    path: 'create-reunion',
     loadChildren: () => import('./create-reunion/create-reunion.module').then( m => m.CreateReunionPageModule)
   }
 ];
