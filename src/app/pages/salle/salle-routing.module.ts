@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: SallePage
+  },
+  {
+    path: 'create-salle',
+    loadChildren: () => import('./create-salle/create-salle.module').then( m => m.CreateSallePageModule)
   }
 ];
 

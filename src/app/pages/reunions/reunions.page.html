@@ -8,10 +8,11 @@
   <!-- List of reunions-->
   <ion-grid class="ion-margin">
     <ion-row>
-      <ion-col>ID</ion-col>
+      <ion-col>ID Réunion</ion-col>
       <ion-col>Heure début</ion-col>
       <ion-col>Heure fin</ion-col>
       <ion-col>Ordre jour</ion-col>
+      <ion-col>Actions</ion-col>
       <!-- <ion-col>Participants</ion-col> we'll add participants later -->
     </ion-row>
     <ion-row *ngFor="let reunion of reunions">
@@ -19,6 +20,7 @@
       <ion-col> {{reunion.ordreJour}} </ion-col>
       <ion-col> {{reunion.ordreJour}} </ion-col>
       <ion-col> {{reunion.ordreJour}} </ion-col>
+      <ion-col><ion-icon name="trash"></ion-icon> <ion-icon name="create"></ion-icon></ion-col>
       <!-- <ion-col> {{reunion.participants}} </ion-col> we'll add participants later -->
     </ion-row>
   </ion-grid>
@@ -27,8 +29,8 @@
 
   <!-- Create meeting button -->
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button onclick="">
-      <ion-icon name="add" routerLink="/tabs/reunions/create-reunion"></ion-icon>
+    <ion-fab-button routerLink="/tabs/reunions/create-reunion">
+      <ion-icon name="add" ></ion-icon>
     </ion-fab-button>
   </ion-fab>
   <!-- Create meeting button -->
