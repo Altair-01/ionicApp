@@ -1,6 +1,6 @@
 <ion-content>
     <div class="header">
-        <h2>Gestion</h2>
+        <h2>Gestion des employés</h2>
 
 
         <ion-fab vertical="top" horizontal="end" slot="fixed">
@@ -9,20 +9,19 @@
             </ion-fab-button>
             <ion-fab-list slide="bottom">
 
-                <ion-fab-button>
+                <ion-fab-button [routerLink]="['/list-employe']" routerLinkActive="router-link-active" color="dark">
                     <ion-icon name="people-outline"></ion-icon>
                 </ion-fab-button>
 
-                <ion-fab-button>
+                <ion-fab-button [routerLink]="['/addemploye']" routerLinkActive="router-link-active" color="dark">
                     <ion-icon name="person-add-outline"></ion-icon>
                 </ion-fab-button>
 
-                <ion-fab-button>
+                <ion-fab-button [routerLink]="['/delete-employe']" routerLinkActive="router-link-active" color="dark">
                     <ion-icon name="person-remove-outline"></ion-icon>
                 </ion-fab-button>
 
-
-                <ion-fab-button>
+                <ion-fab-button color="danger">
                     <ion-icon name="log-out-outline"></ion-icon>
                 </ion-fab-button>
 
